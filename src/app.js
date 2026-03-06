@@ -1,24 +1,21 @@
 const express = require('express');
 
-// Create the Express app instance.
+// Create app instance.
 const app = express();
 
-// Parse incoming JSON payloads.
 app.use(express.json());
 
-// Intro route for quick API sanity checks.
+// TODO (student): Remove this unused variable to satisfy ESLint.
+//const unusedValue = 'remove me';
+
+// Intro route.
 app.get('/', (_req, res) => {
-  res.status(200).json({
-    message: 'Welcome to the linting/formatting CI demo API'
-  });
+  res.status(200).json({ message: 'Welcome to the starter lint/format API' });
 });
 
-// Health route often used in smoke tests and monitoring.
+// Health route.
 app.get('/health', (_req, res) => {
-  res.status(200).json({
-    status: 'ok',
-    checks: ['lint', 'format', 'cypress']
-  });
+  res.status(200).json({ status: 'ok' });
 });
 
 module.exports = app;
