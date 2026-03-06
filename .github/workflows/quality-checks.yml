@@ -21,9 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # TODO: Ensure lint blocks bad code.
       - name: Lint code
         run: npm run lint
 
+      # TODO: Ensure Prettier formatting is enforced.
       - name: Check formatting
         run: npm run format:check
 

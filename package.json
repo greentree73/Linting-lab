@@ -1,7 +1,7 @@
 {
-  "name": "fac-linting-formatting",
+  "name": "lab-linting-formatting-starter",
   "version": "1.0.0",
-  "description": "ESLint and Prettier CI integration",
+  "description": "Starter lab for ESLint and Prettier CI integration",
   "type": "commonjs",
   "main": "src/server.js",
   "scripts": {
